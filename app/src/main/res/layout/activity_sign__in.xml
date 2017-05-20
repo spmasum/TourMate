@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/starting_background"
+        tools:context="com.example.rakib.tourmate.Sign_In">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/login"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            />
+        <EditText
+            android:id="@+id/loginEmailET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="a@a.com"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_margin="10dp"
+            />
+        <EditText
+            android:id="@+id/loginPassET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:text="12345678"
+            android:inputType="textPassword"
+            android:layout_margin="10dp"
+            />
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="100dp"
+
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_gravity="center"
+            android:onClick="login"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="or"/>
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="100dp"
+
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:layout_gravity="center"
+            android:onClick="signUp"/>
+
+
+    </LinearLayout>
+
+
+</layout>

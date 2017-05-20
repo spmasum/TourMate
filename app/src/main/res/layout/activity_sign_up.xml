@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        layout_width="match_parent"
+        layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/starting_background"
+            tools:context="com.example.rakib.tourmate.SignUp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/signup"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                />
+            <EditText
+                android:id="@+id/signUpNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:layout_margin="10dp"
+                />
+
+            <EditText
+                android:id="@+id/signUpPhoneET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:layout_margin="10dp"
+                />
+            <EditText
+                android:id="@+id/signUpAdrsET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:inputType="textEmailAddress"
+                android:layout_margin="10dp"
+                />
+            <EditText
+                android:id="@+id/signUpEmailET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:layout_margin="10dp"
+                />
+
+
+            <EditText
+                android:id="@+id/signUpPassET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_margin="10dp"
+                />
+            <Button
+                android:id="@+id/signUpBtn"
+
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:onClick="signUp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    </layout>
+
+
+

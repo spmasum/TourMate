@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rakib.tourmate">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/SplashTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainPage.MainActivity"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name=".Sign_In"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SignUp"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Homepage.HomePage"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Add_Travel_Event"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".WeatherUpdate.Weather"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".WeatherUpdate.DetailsActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Update_Travel_Event" />
+        <activity
+            android:name=".Homepage.LoginVerifiedPage"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".WeatherUpdate.WeatherOne"
+            android:theme="@style/AppTheme"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/starting_background"
+        tools:context="com.bdclass24.firebaseadddata.Main2Activity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tour Event"
+            android:textSize="25sp"
+
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="#fff"
+            android:layout_margin="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:background="#9ebfa1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2"
+                    android:text="Travel Name"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/eventDestination"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:background="#9ebfa1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="From Date:"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000000"/>
+                <Button
+
+                    android:id="@+id/eventFromDate"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:background="#4ba39b"
+                    android:onClick="eventFromDate"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="#9ebfa1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="To Date:"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000000"/>
+                <Button
+
+                    android:id="@+id/eventToDate"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:background="#4ba39b"
+                    android:onClick="eventToDate"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:background="#9ebfa1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2"
+                    android:text="Est. Budget(Tk)"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/eventBudget"
+                    android:inputType="number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    />
+            </LinearLayout>
+            <Button
+                android:id="@+id/addNewDoctorBtn"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Update Travel Event"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:onClick="updateTravelEvent"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>
+

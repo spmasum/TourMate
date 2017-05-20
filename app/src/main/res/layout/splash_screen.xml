@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.example.rakib.tourmate.SplashScreen">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="82dp"
+        android:padding="5dp"
+        android:shadowColor="#cf1d1d"
+        android:shadowDx="10"
+        android:shadowDy="8"
+        android:shadowRadius="4"
+        android:id="@+id/imageView2"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:indeterminate="false"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        android:background="@drawable/circle_shape"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progress="65"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:textSize="30sp"
+        android:padding="5dp"
+        android:shadowColor="#cf1d1d"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="8"
+        android:textColor="#8d01ff"
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_marginBottom="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="57dp"
+        app:srcCompat="@drawable/splashlogo"
+        android:layout_above="@+id/imageView2"
+        android:layout_alignRight="@+id/progressBar"
+        android:layout_alignEnd="@+id/progressBar" />
+
+</RelativeLayout>
